@@ -1,0 +1,56 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a1a10 0%, #071a20 100%);
+  color: #eef0f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 14px;
+  color: rgba(238,240,247,.55);
+  margin-bottom: 36px;
+}
+
+.fichiers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.fichier {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.09);
+  text-decoration: none;
+  color: #eef0f7;
+  transition: background .2s, border-color .2s, transform .15s;
+}
+.fichier:hover {
+  background: rgba(79,142,255,.13);
+  border-color: rgba(79,142,255,.35);
+  transform: translateY(-2px);
+}
+
+.fichier-icon { font-size: 1.8rem; }
+
+.fichier strong { display: block; font-size: 15px; margin-bottom: 2px; }
+.fichier small  { font-size: 12px; color: rgba(238,240,247,.4); }

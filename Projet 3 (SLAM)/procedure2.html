@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Convention de stage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-inner page-procedure">
+
+  <h1>Procédure de convention de stage</h1>
+
+  <!-- Timeline -->
+  <div class="periode">
+    Période de stage : <strong>27 mai — 5 juillet 2025</strong>
+  </div>
+
+  <div class="etapes">
+
+    <div class="etape-group">
+      <img src="vilgenis2.png" alt="Lycée Vilgénis" class="etape-logo">
+      <div class="etape-steps">
+        <div class="etape">Contacter une entreprise</div>
+        <div class="etape">Remplir la feuille d'engagement (à télécharger depuis l'ENT)</div>
+      </div>
+    </div>
+
+    <div class="etape-group">
+      <img src="bts2.png" alt="BTS SIO" class="etape-logo">
+      <div class="etape-steps">
+        <div class="etape">Signature du responsable entreprise</div>
+        <div class="etape">Signature du tuteur (votre professeur)</div>
+        <div class="etape">Délivrance de la convention de stage</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Formulaire -->
+  <h2>Formulaire</h2>
+
+  <form>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+
+    <label for="naissance">Date de naissance</label>
+    <input type="date" id="naissance" name="naissance">
+
+    <label for="adresse">Adresse postale</label>
+    <textarea id="adresse" name="adresse" rows="3" placeholder="Votre adresse..."></textarea>
+
+    <label for="classe">Classe</label>
+    <select id="classe" name="classe">
+      <option value="bts1">BTS 1</option>
+      <option value="bts2">BTS 2</option>
+      <option value="l3">L3</option>
+    </select>
+
+    <div class="form-btns">
+      <input type="submit" value="Valider">
+      <input type="reset"  value="Annuler">
+    </div>
+  </form>
+
+</body>
+</html>

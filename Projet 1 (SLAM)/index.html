@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Obede NTAKU vous propose un questionnaire à 17 points !</h2>
+<p>Questionnaire sous forme de QCM. Les questions peuvent comporter une ou plusieurs bonnes réponses.</p>
+
+<form id="qcm">
+
+<div class="question">
+<b>Question 1 :</b><br>
+Qui est le plus grand club français de l'histoire du Football ?<br>
+<br>
+<input type="checkbox" name="q1" value="0"> AS Monaco<br>
+<input type="checkbox" name="q1" value="0"> Olympique de Marseille<br>
+<input type="checkbox" name="q1" value="1"> Paris Saint-Germain<br>
+<input type="checkbox" name="q1" value="0"> Olympique Lyonnais<br>
+</div>
+<br>
+<div class="question">
+<b>Question 2 :</b><br>
+Dans quel club Cristiano Ronaldo a-t-il joué en Premier League ?<br>
+<br>
+<input type="checkbox" name="q2" value="0"> Manchester City<br>
+<input type="checkbox" name="q2" value="0"> Arsenal<br>
+<input type="checkbox" name="q2" value="0"> Liverpool<br>
+<input type="checkbox" name="q2" value="1"> Manchester United<br>
+</div>
+<br>
+<div class="question">
+<b>Question 3 :</b><br>
+Un avion s'écrase PILE sur la frontière entre deux pays. Où enterre-t-on les survivants ?<br>
+<br>
+<input type="checkbox" name="q3" value="0"> Au pays où l'avion a décollé<br>
+<input type="checkbox" name="q3" value="1"> Nulle part<br>
+<input type="checkbox" name="q3" value="0"> Dans le premier pays<br>
+<input type="checkbox" name="q3" value="0"> Dans le deuxième pays<br>
+</div>
+<div class="question">
+<b>Question 4 :</b><br>
+Quel pays a remporté la Coupe du Monde 2010 ?<br>
+<br>
+<input type="checkbox" name="q4" value="0"> Pays-Bas<br>
+<input type="checkbox" name="q4" value="0"> Allemagne<br>
+<input type="checkbox" name="q4" value="0"> Argentine<br>
+<input type="checkbox" name="q4" value="1"> Espagne<br>
+</div>
+<div class="question">
+<b>Question 5 :</b><br>
+Quels animaux peuvent respirer sous l'eau ?<br>
+<br>
+<input type="checkbox" name="q5" value="1"> Poissons<br>
+<input type="checkbox" name="q5" value="0"> Dauphins<br>
+<input type="checkbox" name="q5" value="1"> Requins<br>
+<input type="checkbox" name="q5" value="0"> Murènes<br>
+</div>
+<div class="question">
+<b>Question 6 :</b><br>
+Parmi ces langues, lesquelles s'écrivent traditionnellement de droite à gauche ?<br>
+<br>
+<input type="checkbox" name="q6" value="0"> Le Turc<br>
+<input type="checkbox" name="q6" value="0"> Le Mandarin<br>
+<input type="checkbox" name="q6" value="1"> L'Hébreu<br>
+<input type="checkbox" name="q6" value="1"> L'Arabe<br>
+</div>
+<div class="question">
+<b>Question 7 :</b><br>
+Complétez la fin de la phrase de Ninho dans son morceau "Zipette" : "Carla Bruni jouait de la..."<br>
+<br>
+<input type="checkbox" name="q7" value="1"> Guitare<br>
+<input type="checkbox" name="q7" value="0"> Trompette<br>
+<input type="checkbox" name="q7" value="0"> Flûte<br>
+<input type="checkbox" name="q7" value="0"> Violoncelle<br>
+</div>
+<div class="question">
+<b>Question 8 :</b><br>
+Quels jeux possèdent un mode de jeu "Battle Royale" ?<br>
+<br>
+<input type="checkbox" name="q8" value="1"> Apex Legends<br>
+<input type="checkbox" name="q8" value="1"> Fortnite<br>
+<input type="checkbox" name="q8" value="0"> Black Ops 7<br>
+<input type="checkbox" name="q8" value="0"> FC 26<br>
+</div>
+<div class="question">
+<b>Question 9 :</b><br>
+Quels pays sont en Amérique du Sud ?<br>
+<br>
+<input type="checkbox" name="q9" value="0"> Mexique<br>
+<input type="checkbox" name="q9" value="1"> Argentine<br>
+<input type="checkbox" name="q9" value="0"> Espagne<br>
+<input type="checkbox" name="q9" value="1"> Pérou<br>
+</div>
+<div class="question">
+<b>Question 10 :</b><br>
+Quels langages sont utilisés en informatique ?<br>
+<br>
+<input type="checkbox" name="q10" value="1"> HTML<br>
+<input type="checkbox" name="q10" value="1"> CSS<br>
+<input type="checkbox" name="q10" value="1"> JavaScript<br>
+<input type="checkbox" name="q10" value="1"> Python<br>
+</div>
+
+</form>
+
+<br>
+
+<button onclick="testqcm()">Correction</button>
+<button onclick="document.getElementById('qcm').reset()">Effacer</button>
+<button onclick="ouvrirCorrige()">Corrigé</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

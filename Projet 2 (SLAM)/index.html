@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation - GSB</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <header>
+        <h1>Facture Google</h1>
+    </header>
+
+    <main>
+        <section id="facture-container">
+            <h2>Facture Client</h2>
+            
+            <table id="table-facture">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantité</th>
+                        <th>Prix Unitaire (€)</th>
+                        <th>Total Ligne (€)</th>
+                    </tr>
+                </thead>
+                <tbody id="corps-tableau">
+                    <tr class="ligne-commande">
+                        <td><input type="text" class="desc" placeholder="Nom du produit"></td>
+                        <td><input type="number" class="qte" min="1" value="0"></td>
+                        <td><input type="number" class="prix" min="0" step="0.01" value="0"></td>
+                        <td><input type="text" class="total-ligne" readonly value="0"></td>
+                    </tr>
+                    
+                    <tr id="point-insertion"></tr>
+                </tbody>
+            </table>
+
+            <div class="actions">
+                <button onclick="AjouterLigne()" class="btn-secondary">Ajouter une ligne</button>
+                <button onclick="remplir()" class="btn-bonus">Remplir automatiquement</button>
+            </div>
+
+            <div id="parametres-calcul">
+                <div class="param-row">
+                    <label>Remise :</label>
+                    <input type="number" id="taux-remise" step="0.01" value="0">
+                </div>
+                <div class="param-row">
+                    <label>Taux d'imposition :</label>
+                    <input type="number" id="taux-impot" step="0.01" value="0.20">
+                </div>
+                <div class="param-row">
+                    <label>Frais d'expédition (€) :</label>
+                    <input type="number" id="frais-exped" step="1" value="0">
+                </div>
+                
+                <button onclick="calculate()" class="btn-primary">CALCULER LA FACTURE</button>
+            </div>
+
+            <div id="resultats">
+                <p>Sous-Total : <span id="res-sous-total">0.00</span> €</p>
+                <p>Sous-Total remisé : <span id="res-sous-total-remise">0.00</span> €</p>
+                <p>Taxe Totale : <span id="res-taxe">0.00</span> €</p>
+                <hr>
+                <p class="solde-final">SOLDE À PAYER : <span id="res-solde">0.00</span> €</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

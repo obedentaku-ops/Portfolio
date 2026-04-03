@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP 3 — Calculatrice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Calculatrice</h1>
+
+  <div class="calc">
+
+    <div class="inputs">
+      <div>
+        <label>Nombre 1</label>
+        <input type="number" id="t1" placeholder="0">
+      </div>
+      <div>
+        <label>Nombre 2</label>
+        <input type="number" id="t2" placeholder="0">
+      </div>
+    </div>
+
+    <div class="inputs">
+      <div>
+        <label>Résultat</label>
+        <input type="number" id="resultat" placeholder="—" readonly>
+      </div>
+      <div>
+        <label>Parité</label>
+        <input type="text" id="parite" placeholder="—" readonly>
+      </div>
+    </div>
+
+    <div class="btn-grid-3">
+      <button onclick="somme()">Somme</button>
+      <button onclick="multiplication()">Multiplication</button>
+      <button onclick="division()">Division</button>
+    </div>
+
+    <div class="btn-grid-2">
+      <button onclick="permuter()">Permuter</button>
+      <button onclick="parite()">Parité</button>
+    </div>
+
+    <button class="danger" onclick="effacer()">Effacer</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
