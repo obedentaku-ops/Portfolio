@@ -1,0 +1,100 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  color: #eef0f7;
+  padding: 40px 20px;
+  background: #07080f;
+}
+
+.page-accueil  { background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 100%); }
+.page-ps5      { background: linear-gradient(135deg, #0a0a1f 0%, #001a4a 100%); }
+.page-xbox     { background: linear-gradient(135deg, #021a02 0%, #063d06 100%); }
+.page-nintendo { background: linear-gradient(135deg, #1a0000 0%, #3a0a0a 100%); }
+.page-asus     { background: linear-gradient(135deg, #0a0a0a 0%, #1a0a00 100%); }
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.menu a {
+  display: block;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: #eef0f7;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition: background .2s, transform .15s;
+}
+.menu a:hover {
+  background: rgba(79,142,255,.18);
+  border-color: rgba(79,142,255,.4);
+  transform: translateY(-2px);
+}
+
+.card {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 860px;
+  margin: 0 auto 28px;
+}
+
+.card-img img {
+  width: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-info { flex: 1; }
+
+.prix {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4f8eff;
+  margin-bottom: 14px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(238,240,247,.75);
+}
+
+.retour {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255,255,255,.4);
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color .2s;
+}
+.retour:hover { color: #fff; }
+
+@media (max-width: 600px) {
+  .card { flex-direction: column; }
+  .card-img img { width: 100%; }
+}
